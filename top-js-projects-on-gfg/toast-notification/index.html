@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Custom Toast Notifications Showcase</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>Toast Notifications (10 Styles)</h1>
+  
+  <div class="button-grid">
+    <button class="trigger" data-toast="1">Success Toast</button>
+    <button class="trigger" data-toast="2">Warning Toast</button>
+    <button class="trigger" data-toast="3">Top Bar Toast</button>
+    <button class="trigger" data-toast="4">Centered Blur Toast</button>
+    <button class="trigger" data-toast="5">Ribbon Side Toast</button>
+    <button class="trigger" data-toast="6">Flip Center Toast</button>
+    <button class="trigger" data-toast="7">Typing Effect Toast</button>
+    <button class="trigger" data-toast="8">3D Slide Toast</button>
+    <button class="trigger" data-toast="9">Round Alert Toast</button>
+    <button class="trigger" data-toast="10">Loading Dots Toast</button>
+  </div>
+
+  <!-- Toast Container -->
+  <div id="toast-container"></div>
+
+  <!-- Code Viewer Tabs -->
+  <div class="tabs" id="code-tabs" style="display: none;">
+    <div class="tab-buttons">
+      <button class="tab-btn active" data-tab="html">HTML</button>
+      <button class="tab-btn" data-tab="css">CSS</button>
+      <button class="tab-btn" data-tab="js">JS</button>
+    </div>
+    <div class="tab-content active" id="tab-html"></div>
+    <div class="tab-content" id="tab-css"></div>
+    <div class="tab-content" id="tab-js"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

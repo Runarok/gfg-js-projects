@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Advanced Lorem Ipsum Generator with Live Updates & Markdown</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-theme="light">
+  <div class="container">
+    <div class="top-right">
+      <button onclick="toggleTheme()" aria-label="Toggle light/dark theme">Toggle Theme</button>
+    </div>
+
+    <h1>Advanced Lorem Ipsum Generator</h1>
+
+    <label for="paragraphs">Number of paragraphs (1-20):</label>
+    <input type="number" id="paragraphs" min="1" max="20" value="3" aria-describedby="paragraphHelp" />
+
+    <label for="variant">Choose a variant:</label>
+    <select id="variant" aria-describedby="variantHelp">
+      <option value="classic">Classic Lorem</option>
+      <option value="hipster">Hipster Ipsum</option>
+      <option value="corporate">Corporate Ipsum</option>
+    </select>
+
+    <div class="checkbox-container">
+      <input type="checkbox" id="markdownToggle" />
+      <label for="markdownToggle" class="checkbox-label">Use Markdown formatting</label>
+    </div>
+
+    <div class="buttons">
+      <button onclick="copyText()">Copy to Clipboard</button>
+      <button onclick="exportText('txt')">Export .txt</button>
+      <button onclick="exportText('md')">Export .md</button>
+    </div>
+
+    <div class="output" id="output" aria-live="polite" aria-atomic="true"></div>
+    <div class="counts" id="counts" aria-live="polite"></div>
+  </div>
+
+      <script src="script.js"></script>
+</body>
+</html>

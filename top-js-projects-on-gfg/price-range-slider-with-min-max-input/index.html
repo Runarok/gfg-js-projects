@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Price Range Slider</title>
+    <link rel="stylesheet" href="styles.css" />  
+</head>
+<body>
+
+<div class="container">
+  <h2>Price Range</h2>
+
+  <div class="display" id="rangeDisplay">₹50,000 – ₹500,000</div>
+
+  <div class="inputs">
+    <input type="number" id="minInput" value="50000" min="0" max="1000000" step="5000">
+    <input type="number" id="maxInput" value="500000" min="0" max="1000000" step="5000">
+  </div>
+
+  <div class="slider-wrapper">
+    <div class="slider-track"></div>
+    <div class="slider-progress" id="sliderProgress"></div>
+
+    <input type="range" id="minRange" min="0" max="1000000" step="5000" value="50000">
+    <input type="range" id="maxRange" min="0" max="1000000" step="5000" value="500000">
+  </div>
+
+  <button class="reset-btn" onclick="resetSlider()">Reset</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

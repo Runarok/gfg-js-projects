@@ -1,0 +1,116 @@
+
+    :root {
+      --primary: #4CAF50;
+      --track: #ddd;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f2f2f2;
+      padding: 40px;
+      color: #333;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .display {
+      text-align: center;
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+
+    .inputs {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .inputs input {
+      flex: 1;
+      padding: 10px;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    .slider-wrapper {
+      position: relative;
+      height: 50px;
+    }
+
+    .slider-track {
+      position: absolute;
+      height: 6px;
+      background: var(--track);
+      top: 50%;
+      left: 0;
+      right: 0;
+      border-radius: 5px;
+      transform: translateY(-50%);
+    }
+
+    .slider-progress {
+      position: absolute;
+      height: 6px;
+      background: var(--primary);
+      top: 50%;
+      border-radius: 5px;
+      transform: translateY(-50%);
+    }
+
+    input[type="range"] {
+      position: absolute;
+      pointer-events: none;
+      -webkit-appearance: none;
+      width: 100%;
+      height: 50px;
+      background: none;
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+      pointer-events: all;
+      width: 20px;
+      height: 20px;
+      background: var(--primary);
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+      -webkit-appearance: none;
+    }
+
+    .reset-btn {
+      display: block;
+      margin: 20px auto 0;
+      padding: 10px 20px;
+      font-size: 1em;
+      background: #f44336;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .reset-btn:hover {
+      background: #d32f2f;
+    }
+
+    @media (max-width: 500px) {
+      .inputs {
+        flex-direction: column;
+      }
+    }
+  
